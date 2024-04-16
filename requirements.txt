@@ -1,0 +1,12 @@
+joblib
+pandas
+scikit-learn
+numpy
+lightgbm
+catboost
+tokenizers
+datasets
+transformers
+tqdm
+
+-e .

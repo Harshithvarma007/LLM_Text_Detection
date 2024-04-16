@@ -1,3 +1,12 @@
+Metadata-Version: 2.1
+Name: llm-detection
+Version: 0.0.0
+Summary: A small python package for NLP app
+Home-page: https://github.com/Harshithvarma007/LLM_Text_Detection
+Author: Harshithvarma007
+Author-email: harshith007varma007@gmail.com
+Project-URL: Bug Tracker, https://github.com/Harshithvarma007/LLM_Text_Detection/issues
+
 # LLM Text Detection
  
 ## Overview
@@ -28,11 +37,8 @@ https://github.com/Harshithvarma007/Datasets/raw/main/DAIGT%20V2.zip
 
 2. Requiremnts Instalation and project setup
 
-`conda create -n llm -y`
+'conda create -n llm -y'
 `conda activate llm`
-
-`pip install -r requirements.txt`
-
 
 
 
