@@ -1,0 +1,4 @@
+Simple_nn:
+  learning_rate: 0.001
+  loss: 'binary_crossentropy'
+  metrics: ['accuracy']
