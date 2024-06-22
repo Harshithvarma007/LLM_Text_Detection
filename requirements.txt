@@ -5,7 +5,6 @@ scikit-learn
 seaborn
 tensorflow
 wordcloud
-pickle
 types-PyYAML
 Flask
 Flask-Cors
