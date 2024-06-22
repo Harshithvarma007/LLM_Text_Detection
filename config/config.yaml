@@ -7,7 +7,7 @@ data_ingestion:
   source_URL_1: https://github.com/Harshithvarma007/Datasets/raw/main/llm-detect-ai-generated-text.zip
   source_URL_2: https://github.com/Harshithvarma007/Datasets/raw/main/DAIGT%20V2.zip
   local_data_file_1: artifacts/data_ingestion/data_1.zip
-  local_data_file : artifacts/data_ingestion/data_2.zip
+  local_data_file_2: artifacts/data_ingestion/data_2.zip
   unzip_dir: artifacts/data_ingestion
 
 
