@@ -1,8 +1,0 @@
-COLUMNS:
-  text: string
-
-
-
-TARGET_COLUMN:
-  Label : bool
-  
