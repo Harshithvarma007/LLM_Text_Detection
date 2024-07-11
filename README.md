@@ -31,7 +31,7 @@ In this project, we leverage natural language processing (NLP) techniques to bui
 
 ### 🚀 Project Deployment
 The project has been successfully deployed! Check it out here:
-[![Deployed Project](https://img.icons8.com/ios-filled/24/000000/link.png)](http://54.196.163.140:8501/)
+[![Deployed Project](https://img.icons8.com/ios-filled/24/000000/link.png)](http://54.196.76.117:8501/)
 
 ### 📊 Project Notebook
 Explore the detailed project notebook on Kaggle:
