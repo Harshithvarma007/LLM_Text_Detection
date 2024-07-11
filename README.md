@@ -1,9 +1,10 @@
 # Detection of Large-Language Model (LLM) Generated Text 📝🤖
 
-[![GitHub](https://img.icons8.com/material-outlined/24/000000/github.png)](https://github.com/Harshithvarma007/LLM_Text_Detection)
-[![Kaggle](https://upload.wikimedia.org/wikipedia/commons/7/7c/Kaggle_logo.png)](https://www.kaggle.com/code/harshithvarma007/llm-text-detection-99-47-accuracy)
-[![Medium](https://img.icons8.com/ios-filled/24/000000/medium-monogram.png)](https://medium.com/@harshith007varma007/end-to-end-machine-learning-project-part-i-c29c2b982055)
-[![Deployed Project](https://img.icons8.com/ios-filled/24/000000/link.png)](http://54.196.163.140:8501/)
+[<img src="https://img.icons8.com/material-outlined/24/000000/github.png" width="24" height="24"/>](https://github.com/Harshithvarma007/LLM_Text_Detection)
+[<img src="https://www.cdnlogo.com/logos/k/70/kaggle.svg" width="24" height="24"/>](https://www.kaggle.com/code/harshithvarma007/llm-text-detection-99-47-accuracy)
+[<img src="https://img.icons8.com/ios-filled/24/000000/medium-monogram.png" width="24" height="24"/>](https://medium.com/@harshith007varma007/end-to-end-machine-learning-project-part-i-c29c2b982055)
+[<img src="https://img.icons8.com/ios-filled/24/000000/link.png" width="24" height="24"/>](http://54.196.163.140:8501/)
+
 
 
 
