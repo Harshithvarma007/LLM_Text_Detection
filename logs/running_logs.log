@@ -29,3 +29,262 @@
 [2024-06-22 11:27:34,962: INFO: 3711323853: Vectorization is completed]
 [2024-06-22 11:27:45,588: INFO: 3711323853: Spliting of Data is Completed]
 [2024-06-22 11:27:45,790: INFO: 3711323853: Label Encoder is Done]
+[2024-07-11 13:00:20,234: INFO: utils: NumExpr defaulting to 8 threads.]
+[2024-07-11 13:00:35,186: INFO: main: >>>>>> stage Data Ingestion stage started <<<<<<]
+[2024-07-11 13:00:35,202: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-07-11 13:00:35,202: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-07-11 13:00:35,202: INFO: common: yaml file: schema.yaml loaded successfully]
+[2024-07-11 13:00:35,202: INFO: common: created directory at: artifacts]
+[2024-07-11 13:00:35,202: INFO: common: created directory at: artifacts/data_ingestion]
+[2024-07-11 13:00:44,809: INFO: Data_ingestion: artifacts/data_ingestion/data.zip download! with following info: 
+Connection: close
+Content-Length: 31448525
+Cache-Control: max-age=300
+Content-Security-Policy: default-src 'none'; style-src 'unsafe-inline'; sandbox
+Content-Type: application/zip
+ETag: "9032d941af047914d8687d4adc317732a757406822ccfc0b518289ffe1b386e0"
+Strict-Transport-Security: max-age=31536000
+X-Content-Type-Options: nosniff
+X-Frame-Options: deny
+X-XSS-Protection: 1; mode=block
+X-GitHub-Request-Id: 938F:148507:472604:5C2C6B:668F8A1B
+Accept-Ranges: bytes
+Date: Thu, 11 Jul 2024 07:30:40 GMT
+Via: 1.1 varnish
+X-Served-By: cache-maa10245-MAA
+X-Cache: MISS
+X-Cache-Hits: 0
+X-Timer: S1720683035.165510,VS0,VE5712
+Vary: Authorization,Accept-Encoding,Origin
+Access-Control-Allow-Origin: *
+Cross-Origin-Resource-Policy: cross-origin
+X-Fastly-Request-ID: f56fb0c8247866e7bc826a63c0f1e06378bb101b
+Expires: Thu, 11 Jul 2024 07:35:40 GMT
+Source-Age: 5
+
+]
+[2024-07-11 13:00:45,268: INFO: main: >>>>>> stage Data Ingestion stage completed <<<<<<
+
+x==========x]
+[2024-07-11 13:00:45,268: INFO: main: >>>>>> stage Data Validation stage started <<<<<<]
+[2024-07-11 13:00:45,268: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-07-11 13:00:45,268: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-07-11 13:00:45,268: INFO: common: yaml file: schema.yaml loaded successfully]
+[2024-07-11 13:00:45,284: INFO: common: created directory at: artifacts]
+[2024-07-11 13:00:45,284: INFO: common: created directory at: artifacts/data_validation]
+[2024-07-11 13:00:46,293: INFO: main: >>>>>> stage Data Validation stage completed <<<<<<
+
+x==========x]
+[2024-07-11 13:00:46,293: INFO: main: >>>>>> stage Data Transformation stage started <<<<<<]
+[2024-07-11 13:00:46,311: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-07-11 13:00:46,312: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-07-11 13:00:46,313: INFO: common: yaml file: schema.yaml loaded successfully]
+[2024-07-11 13:00:46,314: INFO: common: created directory at: artifacts]
+[2024-07-11 13:00:46,316: INFO: common: created directory at: artifacts/data_transformation]
+[2024-07-11 13:00:47,237: INFO: Data_transformation: Vectorizer is loaded]
+[2024-07-11 13:00:55,120: INFO: Data_transformation: Vectorizer Transformed Data]
+[2024-07-11 13:00:57,975: INFO: Data_transformation: Vectorization is completed]
+[2024-07-11 13:01:08,407: INFO: Data_transformation: Spliting of Data is Completed]
+[2024-07-11 13:01:08,499: INFO: Data_transformation: Label Encoder is Done]
+[2024-07-11 13:01:10,330: INFO: main: >>>>>> stage Data Transformation stage completed <<<<<<
+
+x==========x]
+[2024-07-11 13:01:10,330: INFO: main: >>>>>> stage Model Trainer stage started <<<<<<]
+[2024-07-11 13:01:10,421: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-07-11 13:01:10,434: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-07-11 13:01:10,446: INFO: common: yaml file: schema.yaml loaded successfully]
+[2024-07-11 13:01:10,458: INFO: common: created directory at: artifacts]
+[2024-07-11 13:01:10,463: INFO: common: created directory at: artifacts/model_trainer]
+[2024-07-11 13:01:10,481: INFO: Model_Trainer: Data Loaded]
+[2024-07-11 13:01:11,319: INFO: Model_Trainer: Model Compiled]
+[2024-07-11 13:02:33,501: INFO: Model_Trainer: Model training Completed]
+[2024-07-11 13:02:33,517: WARNING: saving_api: You are saving your model as an HDF5 file via `model.save()` or `keras.saving.save_model(model)`. This file format is considered legacy. We recommend using instead the native Keras format, e.g. `model.save('my_model.keras')` or `keras.saving.save_model(model, 'my_model.keras')`. ]
+[2024-07-11 13:02:33,666: INFO: Model_Trainer: Model Saved]
+[2024-07-11 13:02:33,666: INFO: main: >>>>>> stage Model Trainer stage completed <<<<<<
+
+x==========x]
+[2024-07-11 13:02:33,666: INFO: main: >>>>>> stage Model evaluation stage started <<<<<<]
+[2024-07-11 13:02:33,666: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-07-11 13:02:33,666: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-07-11 13:02:33,666: INFO: common: yaml file: schema.yaml loaded successfully]
+[2024-07-11 13:02:33,675: INFO: common: created directory at: artifacts]
+[2024-07-11 13:02:33,677: INFO: common: created directory at: artifacts/model_evaluation]
+[2024-07-11 13:02:33,681: ERROR: main: File format not supported: filepath=artifacts/model_trainer/model.joblib. Keras 3 only supports V3 `.keras` files and legacy H5 format files (`.h5` extension). Note that the legacy SavedModel format is not supported by `load_model()` in Keras 3. In order to reload a TensorFlow SavedModel as an inference-only layer in Keras 3, use `keras.layers.TFSMLayer(artifacts/model_trainer/model.joblib, call_endpoint='serving_default')` (note that your `call_endpoint` might have a different name).]
+Traceback (most recent call last):
+  File "C:\Users\N Ramaraju\Desktop\Projects\LLM-Text-Detection\main.py", line 55, in <module>
+    data_ingestion.main(res)
+  File "c:\users\n ramaraju\desktop\projects\llm-text-detection\src\LLM_text_detection\pipeline\Stage_05.py", line 13, in main
+    model_evaluation_config.eval(res[1],res[3])
+  File "c:\users\n ramaraju\desktop\projects\llm-text-detection\src\LLM_text_detection\components\Model_evaluation.py", line 16, in eval
+    model = load_model(self.config.model_path)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\N Ramaraju\AppData\Local\Programs\Python\Python311\Lib\site-packages\keras\src\saving\saving_api.py", line 193, in load_model
+    raise ValueError(
+ValueError: File format not supported: filepath=artifacts/model_trainer/model.joblib. Keras 3 only supports V3 `.keras` files and legacy H5 format files (`.h5` extension). Note that the legacy SavedModel format is not supported by `load_model()` in Keras 3. In order to reload a TensorFlow SavedModel as an inference-only layer in Keras 3, use `keras.layers.TFSMLayer(artifacts/model_trainer/model.joblib, call_endpoint='serving_default')` (note that your `call_endpoint` might have a different name).
+[2024-07-11 13:04:51,134: INFO: utils: NumExpr defaulting to 8 threads.]
+[2024-07-11 13:04:59,702: INFO: main: >>>>>> stage Data Transformation stage started <<<<<<]
+[2024-07-11 13:04:59,702: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-07-11 13:04:59,702: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-07-11 13:04:59,702: INFO: common: yaml file: schema.yaml loaded successfully]
+[2024-07-11 13:04:59,702: INFO: common: created directory at: artifacts]
+[2024-07-11 13:04:59,702: INFO: common: created directory at: artifacts/data_transformation]
+[2024-07-11 13:05:00,716: INFO: Data_transformation: Vectorizer is loaded]
+[2024-07-11 13:05:09,565: INFO: Data_transformation: Vectorizer Transformed Data]
+[2024-07-11 13:05:10,093: INFO: Data_transformation: Vectorization is completed]
+[2024-07-11 13:05:12,745: INFO: Data_transformation: Spliting of Data is Completed]
+[2024-07-11 13:05:12,787: INFO: Data_transformation: Label Encoder is Done]
+[2024-07-11 13:05:14,610: INFO: main: >>>>>> stage Data Transformation stage completed <<<<<<
+
+x==========x]
+[2024-07-11 13:05:14,610: INFO: main: >>>>>> stage Model evaluation stage started <<<<<<]
+[2024-07-11 13:05:14,634: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-07-11 13:05:14,639: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-07-11 13:05:14,642: INFO: common: yaml file: schema.yaml loaded successfully]
+[2024-07-11 13:05:14,644: INFO: common: created directory at: artifacts]
+[2024-07-11 13:05:14,645: INFO: common: created directory at: artifacts/model_evaluation]
+[2024-07-11 13:05:15,269: WARNING: saving_utils: Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.]
+[2024-07-11 13:05:27,879: INFO: main: >>>>>> stage Model evaluation stage completed <<<<<<
+
+x==========x]
+[2024-07-11 13:08:18,338: INFO: utils: NumExpr defaulting to 8 threads.]
+[2024-07-11 13:08:26,738: INFO: main: >>>>>> stage Data Ingestion stage started <<<<<<]
+[2024-07-11 13:08:26,738: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-07-11 13:08:26,738: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-07-11 13:08:26,738: INFO: common: yaml file: schema.yaml loaded successfully]
+[2024-07-11 13:08:26,738: INFO: common: created directory at: artifacts]
+[2024-07-11 13:08:26,747: INFO: common: created directory at: artifacts/data_ingestion]
+[2024-07-11 13:08:30,612: INFO: Data_ingestion: artifacts/data_ingestion/data.zip download! with following info: 
+Connection: close
+Content-Length: 31448525
+Cache-Control: max-age=300
+Content-Security-Policy: default-src 'none'; style-src 'unsafe-inline'; sandbox
+Content-Type: application/zip
+ETag: "9032d941af047914d8687d4adc317732a757406822ccfc0b518289ffe1b386e0"
+Strict-Transport-Security: max-age=31536000
+X-Content-Type-Options: nosniff
+X-Frame-Options: deny
+X-XSS-Protection: 1; mode=block
+X-GitHub-Request-Id: 938F:148507:472604:5C2C6B:668F8A1B
+Accept-Ranges: bytes
+Date: Thu, 11 Jul 2024 07:38:27 GMT
+Via: 1.1 varnish
+X-Served-By: cache-maa10242-MAA
+X-Cache: HIT
+X-Cache-Hits: 0
+X-Timer: S1720683507.721628,VS0,VE387
+Vary: Authorization,Accept-Encoding,Origin
+Access-Control-Allow-Origin: *
+Cross-Origin-Resource-Policy: cross-origin
+X-Fastly-Request-ID: e2a0c3933ccb7ba130dbab8dcab9fbc59cc4a6da
+Expires: Thu, 11 Jul 2024 07:43:27 GMT
+Source-Age: 0
+
+]
+[2024-07-11 13:08:31,032: INFO: main: >>>>>> stage Data Ingestion stage completed <<<<<<
+
+x==========x]
+[2024-07-11 13:08:31,032: INFO: main: >>>>>> stage Data Validation stage started <<<<<<]
+[2024-07-11 13:08:31,048: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-07-11 13:08:31,048: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-07-11 13:08:31,048: INFO: common: yaml file: schema.yaml loaded successfully]
+[2024-07-11 13:08:31,051: INFO: common: created directory at: artifacts]
+[2024-07-11 13:08:31,052: INFO: common: created directory at: artifacts/data_validation]
+[2024-07-11 13:08:31,933: INFO: main: >>>>>> stage Data Validation stage completed <<<<<<
+
+x==========x]
+[2024-07-11 13:08:31,933: INFO: main: >>>>>> stage Data Transformation stage started <<<<<<]
+[2024-07-11 13:08:31,949: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-07-11 13:08:31,949: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-07-11 13:08:31,953: INFO: common: yaml file: schema.yaml loaded successfully]
+[2024-07-11 13:08:31,953: INFO: common: created directory at: artifacts]
+[2024-07-11 13:08:31,955: INFO: common: created directory at: artifacts/data_transformation]
+[2024-07-11 13:08:32,812: INFO: Data_transformation: Vectorizer is loaded]
+[2024-07-11 13:08:41,077: INFO: Data_transformation: Vectorizer Transformed Data]
+[2024-07-11 13:08:41,745: INFO: Data_transformation: Vectorization is completed]
+[2024-07-11 13:08:47,462: INFO: Data_transformation: Spliting of Data is Completed]
+[2024-07-11 13:08:47,559: INFO: Data_transformation: Label Encoder is Done]
+[2024-07-11 13:08:48,617: INFO: main: >>>>>> stage Data Transformation stage completed <<<<<<
+
+x==========x]
+[2024-07-11 13:08:48,617: INFO: main: >>>>>> stage Model Trainer stage started <<<<<<]
+[2024-07-11 13:08:48,641: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-07-11 13:08:48,648: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-07-11 13:08:48,651: INFO: common: yaml file: schema.yaml loaded successfully]
+[2024-07-11 13:08:48,655: INFO: common: created directory at: artifacts]
+[2024-07-11 13:08:48,658: INFO: common: created directory at: artifacts/model_trainer]
+[2024-07-11 13:08:48,660: INFO: Model_Trainer: Data Loaded]
+[2024-07-11 13:08:49,065: INFO: Model_Trainer: Model Compiled]
+[2024-07-11 13:10:13,262: INFO: Model_Trainer: Model training Completed]
+[2024-07-11 13:10:13,275: WARNING: saving_api: You are saving your model as an HDF5 file via `model.save()` or `keras.saving.save_model(model)`. This file format is considered legacy. We recommend using instead the native Keras format, e.g. `model.save('my_model.keras')` or `keras.saving.save_model(model, 'my_model.keras')`. ]
+[2024-07-11 13:10:13,404: INFO: Model_Trainer: Model Saved]
+[2024-07-11 13:10:13,405: INFO: main: >>>>>> stage Model Trainer stage completed <<<<<<
+
+x==========x]
+[2024-07-11 13:10:13,405: INFO: main: >>>>>> stage Model evaluation stage started <<<<<<]
+[2024-07-11 13:10:13,410: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-07-11 13:10:13,412: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-07-11 13:10:13,413: INFO: common: yaml file: schema.yaml loaded successfully]
+[2024-07-11 13:10:13,414: INFO: common: created directory at: artifacts]
+[2024-07-11 13:10:13,416: INFO: common: created directory at: artifacts/model_evaluation]
+[2024-07-11 13:10:13,497: WARNING: saving_utils: Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.]
+[2024-07-11 13:10:55,082: INFO: main: >>>>>> stage Model evaluation stage completed <<<<<<
+
+x==========x]
+[2024-07-11 13:15:12,429: INFO: utils: NumExpr defaulting to 8 threads.]
+[2024-07-11 13:15:20,550: INFO: main: >>>>>> stage Data Ingestion stage started <<<<<<]
+[2024-07-11 13:15:20,550: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-07-11 13:15:20,558: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-07-11 13:15:20,558: INFO: common: yaml file: schema.yaml loaded successfully]
+[2024-07-11 13:15:20,558: INFO: common: created directory at: artifacts]
+[2024-07-11 13:15:20,560: INFO: common: created directory at: artifacts/data_ingestion]
+[2024-07-11 13:15:20,561: INFO: Data_ingestion: File already exists of size: ~ 30711 KB]
+[2024-07-11 13:15:20,991: INFO: main: >>>>>> stage Data Ingestion stage completed <<<<<<
+
+x==========x]
+[2024-07-11 13:15:20,991: INFO: main: >>>>>> stage Data Validation stage started <<<<<<]
+[2024-07-11 13:15:20,991: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-07-11 13:15:20,991: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-07-11 13:15:21,007: INFO: common: yaml file: schema.yaml loaded successfully]
+[2024-07-11 13:15:21,007: INFO: common: created directory at: artifacts]
+[2024-07-11 13:15:21,008: INFO: common: created directory at: artifacts/data_validation]
+[2024-07-11 13:15:21,937: INFO: main: >>>>>> stage Data Validation stage completed <<<<<<
+
+x==========x]
+[2024-07-11 13:15:21,937: INFO: main: >>>>>> stage Data Transformation stage started <<<<<<]
+[2024-07-11 13:15:21,937: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-07-11 13:15:21,937: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-07-11 13:15:21,937: INFO: common: yaml file: schema.yaml loaded successfully]
+[2024-07-11 13:15:21,950: INFO: common: created directory at: artifacts]
+[2024-07-11 13:15:21,951: INFO: common: created directory at: artifacts/data_transformation]
+[2024-07-11 13:15:22,816: INFO: Data_transformation: Vectorizer is loaded]
+[2024-07-11 13:15:30,869: INFO: Data_transformation: Vectorizer Transformed Data]
+[2024-07-11 13:15:31,563: INFO: Data_transformation: Vectorization is completed]
+[2024-07-11 13:15:36,851: INFO: Data_transformation: Spliting of Data is Completed]
+[2024-07-11 13:15:36,874: INFO: Data_transformation: Label Encoder is Done]
+[2024-07-11 13:15:37,298: INFO: main: >>>>>> stage Data Transformation stage completed <<<<<<
+
+x==========x]
+[2024-07-11 13:15:37,313: INFO: main: >>>>>> stage Model Trainer stage started <<<<<<]
+[2024-07-11 13:15:37,313: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-07-11 13:15:37,329: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-07-11 13:15:37,330: INFO: common: yaml file: schema.yaml loaded successfully]
+[2024-07-11 13:15:37,333: INFO: common: created directory at: artifacts]
+[2024-07-11 13:15:37,334: INFO: common: created directory at: artifacts/model_trainer]
+[2024-07-11 13:15:37,337: INFO: Model_Trainer: Data Loaded]
+[2024-07-11 13:15:37,835: INFO: Model_Trainer: Model Compiled]
+[2024-07-11 13:17:03,528: INFO: Model_Trainer: Model training Completed]
+[2024-07-11 13:17:03,530: WARNING: saving_api: You are saving your model as an HDF5 file via `model.save()` or `keras.saving.save_model(model)`. This file format is considered legacy. We recommend using instead the native Keras format, e.g. `model.save('my_model.keras')` or `keras.saving.save_model(model, 'my_model.keras')`. ]
+[2024-07-11 13:17:03,657: INFO: Model_Trainer: Model Saved]
+[2024-07-11 13:17:03,657: INFO: main: >>>>>> stage Model Trainer stage completed <<<<<<
+
+x==========x]
+[2024-07-11 13:17:03,657: INFO: main: >>>>>> stage Model evaluation stage started <<<<<<]
+[2024-07-11 13:17:03,657: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2024-07-11 13:17:03,657: INFO: common: yaml file: params.yaml loaded successfully]
+[2024-07-11 13:17:03,657: INFO: common: yaml file: schema.yaml loaded successfully]
+[2024-07-11 13:17:03,669: INFO: common: created directory at: artifacts]
+[2024-07-11 13:17:03,670: INFO: common: created directory at: artifacts/model_evaluation]
+[2024-07-11 13:17:03,740: WARNING: saving_utils: Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.]
+[2024-07-11 13:17:12,270: INFO: main: >>>>>> stage Model evaluation stage completed <<<<<<
+
+x==========x]

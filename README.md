@@ -62,6 +62,46 @@ Follow these steps to set up and run the project locally:
     ```sh
     streamlit run app.py
     ```
+Follow the below steps to train the model Locally:
+
+Certainly! Here are the steps formatted in a more readable and presentable way:
+
+---
+
+## 🚀 Training the Model Locally
+
+To train the model locally, follow these steps:
+
+### Step 1: Clone the Repository
+
+```sh
+git clone -b main https://github.com/Harshithvarma007/LLM_Text_Detection.git
+cd LLM_Text_Detection
+```
+
+### Step 2: Set Up Virtual Environment and Install Dependencies
+
+```sh
+python3 -m venv venv
+source venv/bin/activate
+pip install -r requirements.txt
+```
+
+
+This script will train the detection model using the configured dataset and save the trained model weights.
+
+### Step 3: Run the Application
+
+Start the Streamlit app to interact with the trained model:
+
+```sh
+streamlit run app.py
+```
+
+### Step 4: Navigate the App
+
+Once the Streamlit app is running, open your web browser and visit [http://localhost:8501](http://localhost:8501). Navigate within the app to find the "Train Model" button to initiate training if it's not already trained using `train.py`.
+
 
 ## 🤝 Contributing
 

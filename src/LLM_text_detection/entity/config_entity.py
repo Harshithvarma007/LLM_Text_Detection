@@ -35,3 +35,9 @@ class ModelTrainerConfig:
     loss: str
     metrics: list
     target_column: str
+
+@dataclass(frozen=True)
+class ModelEvaluationConfig:
+    root_dir: Path
+    model_path: Path
+    target_column: str
