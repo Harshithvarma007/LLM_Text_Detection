@@ -144,7 +144,7 @@ def main():
         
         with col3:
             if st.button("Blog"):
-                st.write("[Medium](https://medium.com/p/c29c2b982055) 📄")
+                st.write("[Medium](https://medium.com/@harshith007varma007/llm-text-detection-79aa048fd325) 📄")
 
 if __name__ == "__main__":
     main()
